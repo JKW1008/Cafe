@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+}
+header {
+  width: 100%;
+  height: 3.7vh;
+}
+#GlobalNav {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#GlobalNav span {
+  margin-left: 40px;
+  font-size: 1.1em;
+}
+#GlobalNav span a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#MainImage {
+  width: 100%;
+  height: 20vh;
+  background: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#BigText {
+  display: flex;
+  padding: 50px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#CafeInfo {
+  width: 100%;
+  height: 24.7vh;
+}
+#CafeInfo #SmallText {
+  padding-left: 90px;
+}
+
+#CafeInfo #SmallText p {
+  padding-bottom: 30px;
+  font-size: 1.3em;
+  /* font-weight: bold; */
+}
+#WayToCome {
+  width: 100%;
+  height: 20.6vh;
+  background-color: #eee;
+}
+#WayToCome #SmallText {
+  padding-left: 90px;
+}
+
+#WayToCome #SmallText p {
+  padding-bottom: 30px;
+  font-size: 1.3em;
+  /* font-weight: bold; */
+}
+
+#BestSeller {
+  width: 100%;
+  height: 23vh;
+}
+
+#BestSeller #BigText {
+  padding-bottom: 30px;
+}
+#BestSeller #MidleText {
+  padding-left: 100px;
+  padding-bottom: 30px;
+  font-size: 1.3em;
+}
+#BestSeller #SmallText {
+  padding-left: 90px;
+}
+#BestSeller #SmallText p {
+  font-size: 1em;
+  padding-bottom: 15px;
+  /* font-weight: bold; */
+}
+footer {
+  width: 100%;
+  height: 8vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oleo Script", cursive;
+}
+
+@media screen and (min-width: 768px) {
+  #CafeInfo {
+    border-right: 2px dotted #ccc;
+  }
+
+  #MinContainer {
+    display: flex;
+    border-top: 2px dotted #ccc;
+    border-bottom: 2px dotted #ccc;
+  }
+  #CafeInfo {
+    width: 100%;
+    height: 40vh;
+  }
+  #WayToCome {
+    width: 100%;
+    height: 40vh;
+  }
+  #BestSeller {
+    width: 100%;
+    height: 28.3vh;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #Container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #CafeInfo {
+    border: 2px dotted #ccc;
+  }
+
+  #WayToCome {
+    border: 2px dotted #ccc;
+  }
+  #BestSeller {
+    border-left: 2px dotted #ccc;
+    border-right: 2px dotted #ccc;
+  }
+  #MinContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+  #CafeInfoContent {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  #CafeInfo #imageWrap {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+  }
+  #CafeInfoImg {
+    width: 400px;
+    height: 250px;
+    background-image: url("../images/coffee.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #CafeInfo #textWrap {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    padding: 0;
+  }
+  #CafeInfo #SmallText {
+    width: 80%;
+    height: 50%;
+
+    padding: 10%;
+  }
+  #WayToCome {
+    display: flex;
+    flex-direction: column;
+  }
+  #CafeInfoContent {
+    display: flex;
+    width: 100%;
+    height: 74%;
+  }
+  #CafeInfo #imageWrap {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+  }
+  #CafeInfoImg {
+    width: 400px;
+    height: 250px;
+    background-image: url("../images/coffee.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #CafeInfo #textWrap {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 0;
+  }
+  #CafeInfo #SmallText {
+    width: 80%;
+    height: 50%;
+    padding: 10%;
+  }
+
+  #WayToComeContent {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  #WayToCome #imageWrap {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+  }
+  #WayToComeImg {
+    width: 400px;
+    height: 250px;
+    background-image: url("../images/map.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #WayToCome #textWrap {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 0;
+  }
+  #WayToCome #SmallText {
+    width: 80%;
+    height: 50%;
+    padding: 10%;
+  }
+
+  #BestSellerContent {
+    display: flex;
+    width: 100%;
+    height: 69%;
+  }
+
+  #BestSeller #textWrap {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0;
+  }
+  #BestSeller #SmallText {
+    width: 65%;
+    height: 77%;
+    margin-left: 70px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  #BestSeller #imageWrap {
+    width: 50%;
+    display: flex;
+    padding-right: 20px;
+  }
+  #BestSellerImg {
+    width: 400px;
+    height: 250px;
+    background-image: url("../images/Untitled-2.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
